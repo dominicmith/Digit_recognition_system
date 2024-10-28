@@ -1,0 +1,89 @@
+/* App.css */
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Full height of the viewport */
+  background-color: #f0f8ff; /* Light background color */
+  font-family: 'Arial', sans-serif;
+  padding: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden; /* Prevent scrolling */
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+input[type="file"] {
+  display: none; /* Hide the default file input */
+}
+
+.file-input-label {
+  margin: 10px 0;
+  padding: 10px;
+  border: 2px solid #007bff;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #007bff;
+  cursor: pointer;
+  transition: border 0.3s, background 0.3s;
+}
+
+.file-input-label:hover {
+  border-color: #0056b3;
+  background-color: #e6f0ff; /* Light blue background on hover */
+}
+
+.upload-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+  font-size: 1rem;
+  margin-top: 10px; /* Add margin for spacing */
+}
+
+.upload-button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px); /* Slight lift effect */
+}
+
+.image-preview {
+  margin-top: 20px;
+  text-align: center;
+  border-radius: 5px;
+  background-color: #e6f0ff; /* Light blue background for image preview */
+  padding: 20px;
+  border: 2px solid #007bff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  max-width: 100%; /* Ensure it doesn't overflow */
+  overflow: hidden; /* Prevent overflow */
+}
+
+.image-preview img {
+  max-width: 100%; /* Responsive image */
+  max-height: 250px; /* Limit height to prevent overflow */
+  height: auto;
+  border-radius: 5px;
+}
+
+.prediction {
+  margin-top: 20px;
+  font-size: 24px;
+  color: #28a745;
+}
+
+.error-message {
+  margin-top: 20px;
+  font-size: 24px;
+  color: #dc3545;
+}
